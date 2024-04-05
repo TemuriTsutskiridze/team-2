@@ -1,5 +1,3 @@
-function FeedBacks() {
-  return <div>Feedbacks </div>;
+export default function FeedBacks() {
+  return <div>Feedbacks</div>;
 }
-
-export default FeedBacks;

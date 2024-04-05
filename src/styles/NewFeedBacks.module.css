@@ -1,0 +1,35 @@
+.container {
+  max-width: 327px;
+  margin: 34px auto 77px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 55px;
+}
+
+.header a {
+  color: rgba(var(--go-back-btn));
+  font-family: Jost;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.plus {
+  position: absolute;
+  top: -20px;
+  width: 40px;
+  height: 40px;
+}
+
+.content {
+  position: relative;
+  background-color: rgba(var(--container-bg));
+  border-radius: 10px;
+  padding: 44px 24px 24px;
+}

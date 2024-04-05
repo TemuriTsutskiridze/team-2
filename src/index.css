@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.5s;
 }
 
 /* Styles Rules 
@@ -16,6 +17,8 @@
 */
 
 :root {
+  --body-color: 247, 248, 253;
+
   /* Commons */
   --title: 58, 67, 116;
   --title-h: 70, 97, 230;
@@ -79,11 +82,11 @@
 }
 
 [data-theme="dark"] {
+  --body-color: 40, 40, 40;
+
   --title: 255, 255, 255;
   --title-h: 128, 59, 241;
-
   --paragraph: 193, 193, 193;
-
   --text-white: 255, 255, 255;
   --text-secondary: 242, 244, 254;
 
@@ -132,6 +135,10 @@
   --input-bg: 40, 40, 40;
   --input-border-s: 141, 5, 163;
   --input-border-e: 215, 55, 55;
+}
+
+#root {
+  min-height: 100vh;
 }
 
 body {

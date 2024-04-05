@@ -1,0 +1,121 @@
+.title,
+.label {
+  color: rgba(var(--title));
+  font-weight: 700;
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 24px;
+  margin-top: 10px;
+}
+
+.label {
+  font-size: 13px;
+}
+
+.paragraph {
+  color: rgba(var(--paragraph));
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: rgba(var(--title));
+}
+
+.input,
+.textarea,
+.select {
+  padding-left: 16px;
+  padding-top: 10px;
+  border-radius: 5px;
+}
+
+.form input {
+  width: 100%;
+  background-color: rgba(var(--input-bg));
+  outline: none;
+  padding: 13px;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
+
+.form input:focus,
+.textarea:focus {
+  outline: 2px solid rgba(var(--input-border-s));
+}
+
+.form select {
+  appearance: none;
+  background-image: url("/assets/shared/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-color: rgba(var(--input-bg));
+  width: 100%;
+  padding: 13px 30px 13px 10px;
+  outline: none;
+}
+
+.form option {
+  width: 100%;
+  color: rgba(var(--purple), 1);
+}
+
+.textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-family: "Arial";
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: rgba(var(--input-bg));
+  resize: none;
+  height: 128px;
+  margin-bottom: 5px;
+}
+
+.errorBorder {
+  outline: 1px solid rgba(var(--input-border-e)) !important;
+}
+
+.error {
+  color: rgba(var(--input-border-e));
+  font-size: 14px;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.buttonsContainer a,
+.addBtn {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10.5px 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.buttonsContainer a {
+  background-color: rgba(var(--cancel-btn));
+  color: rgba(var(--text-white));
+}
+.buttonsContainer a:hover {
+  background-color: rgba(var(--cancel-btn-h));
+}
+.addBtn {
+  color: rgba(var(--text-secondary));
+  background-color: rgba(var(--add-btn));
+}
+
+.addBtn:hover {
+  background-color: rgba(var(--add-btn-h));
+}
