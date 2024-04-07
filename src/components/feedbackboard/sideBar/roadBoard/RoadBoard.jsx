@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable*/
 import styles from "./RoadBoard.module.css";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
@@ -13,7 +13,7 @@ export default function () {
     <div className={`${styles.roadBoard} md:mb-0`}>
       <h1 className={styles.roadTitle}>
         Roadmap
-        <Link to="/roadmap" className={styles.view}>
+        <Link to={`${planned && progress && live !== 0 ? `/roadmap` : ''}`} className={styles.view}>
           view
         </Link>
       </h1>
